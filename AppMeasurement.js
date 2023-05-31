@@ -1,3 +1,15 @@
+
+    // Instantiate the Analytics tracking object with report suite ID
+var s_account = "ags1161mobileapplicationdemo";
+var s=s_gi(s_account);
+
+// Make sure data is sent to the correct tracking server
+s.trackingServer = "example.data.adobedc.net";
+    s.pageName = "Example page";
+s.eVar1 = "Example eVar";
+s.events = "event1";
+s.t();
+
 /*
  Copyright 1996 Adobe. All Rights Reserved.
 
