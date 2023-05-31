@@ -17,6 +17,22 @@
      <script src="AppMeasurement.js"></script>
       <script src="at.js"></script>
     <!--/Launch Header Embed Code-->
+    <script>
+   adobe.target.getOffer({
+  "mbox": "mlb-test",
+  "params": {
+  },
+  "success": function(offer) {
+        adobe.target.applyOffer( {
+           "mbox": "mlb-test",
+           "offer": offer
+        } );
+  },
+  "error": function(status, error) {
+      console.log('Error', status, error);
+  }
+});
+</script>        
 </head>
 
 <body>
