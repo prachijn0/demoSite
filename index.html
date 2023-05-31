@@ -17,6 +17,15 @@
      <script src="AppMeasurement.js"></script>
     <!--/Launch Header Embed Code-->
 </head>
+    // Instantiate the Analytics tracking object with report suite ID
+var s_account = "ags1161mobileapplicationdemo";
+var s=s_gi(s_account);
+s.pageName = "Example page";
+s.eVar1 = "Example eVar";
+s.events = "event1";
+s.t();
+// Make sure data is sent to the correct tracking server
+s.trackingServer = "example.data.adobedc.net";
 <body>
     <h1>Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of websdk and hard coded legacy implemenattion</p>
