@@ -5,10 +5,13 @@ var s=s_gi(s_account);
 
 // Make sure data is sent to the correct tracking server
 s.trackingServer = "edge.adobedc.net";
-    s.pageName = "Example page";
+s.visitor = Visitor.getInstance("37AC7B755DA83F650A495F97@AdobeOrg");
+s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
+s.pageName = "Example page";
 s.eVar1 = "Example eVar";
 s.events = "event1";
 s.t();
+
 
 /*
  Copyright 1996 Adobe. All Rights Reserved.
